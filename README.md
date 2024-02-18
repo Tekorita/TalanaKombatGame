@@ -1,2 +1,3 @@
 # TalanaKombatGame
-Game of kombat Talana
+Welcome to Game of kombat Talana
+
