@@ -1,0 +1,67 @@
+[
+    {
+      "model": "players.movementsplayers",
+      "pk": 1,
+      "fields": {
+        "player": 1,
+        "movement": 1
+      }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 2,
+        "fields": {
+            "player": 1,
+            "movement": 2
+        }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 3,
+        "fields": {
+            "player": 1,
+            "movement": 3
+        }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 4,
+        "fields": {
+            "player": 1,
+            "movement": 4
+        }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 5,
+        "fields": {
+            "player": 2,
+            "movement": 5
+        }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 6,
+        "fields": {
+            "player": 2,
+            "movement": 6
+        }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 7,
+        "fields": {
+            "player": 2,
+            "movement": 3
+        }
+    },
+    {
+        "model": "players.movementsplayers",
+        "pk": 8,
+        "fields": {
+            "player": 2,
+            "movement": 4
+        }
+    }
+  ]
+  

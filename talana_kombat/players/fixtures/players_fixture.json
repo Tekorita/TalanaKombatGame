@@ -1,0 +1,18 @@
+[
+    {
+      "model": "players.player",
+      "pk": 1,
+      "fields": {
+        "name": "Tony",
+        "perfil_player": "player 1"
+      }
+    },
+    {
+      "model": "players.player",
+      "pk": 2,
+      "fields": {
+        "name": "Arnol",
+        "perfil_player": "player 2"
+      }
+    }
+]

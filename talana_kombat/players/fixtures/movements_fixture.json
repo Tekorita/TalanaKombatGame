@@ -1,0 +1,57 @@
+[
+    {
+      "model": "players.movement",
+      "pk": 1,
+      "fields": {
+        "combination": "DSD+P",
+        "energy_off": 3,
+        "movement_name": "taladoken"
+      }
+    },
+    {
+        "model": "players.movement",
+        "pk": 2,
+        "fields": {
+          "combination": "SD+K",
+          "energy_off": 2,
+          "movement_name": "Remuyuken"
+        }
+    },
+    {
+        "model": "players.movement",
+        "pk": 3,
+        "fields": {
+            "combination": "P",
+            "energy_off": 1,
+            "movement_name": "Puño"
+        }
+    },
+    {
+        "model": "players.movement",
+        "pk": 4,
+        "fields": {
+            "combination": "K",
+            "energy_off": 1,
+            "movement_name": "Patada"
+        }
+    },
+    {
+        "model": "players.movement",
+        "pk": 5,
+        "fields": {
+            "combination": "SA+K",
+            "energy_off": 3,
+            "movement_name": "Remuyuken"
+        }
+    },
+    {
+        "model": "players.movement",
+        "pk": 6,
+        "fields": {
+            "combination": "ASA+P",
+            "energy_off": 2,
+            "movement_name": "Taladoken"
+        }
+    }
+  ]
+  

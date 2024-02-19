@@ -24,7 +24,7 @@ class Common(Configuration):
 
         # Your apps
         'talana_kombat.users',
-
+        'talana_kombat.players',
     )
 
     # https://docs.djangoproject.com/en/2.0/topics/http/middleware/
