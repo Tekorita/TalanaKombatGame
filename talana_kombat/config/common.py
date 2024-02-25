@@ -19,6 +19,7 @@ class Common(Configuration):
 
         # Third party apps
         'rest_framework',            # utilities for rest apis
+        'corsheaders',
         'rest_framework.authtoken',  # token authentication
         # 'django_filters',            # for filtering rest endpoints
 
@@ -30,6 +31,7 @@ class Common(Configuration):
     # https://docs.djangoproject.com/en/2.0/topics/http/middleware/
     MIDDLEWARE = (
         'django.middleware.security.SecurityMiddleware',
+        "corsheaders.middleware.CorsMiddleware",
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
@@ -101,7 +103,8 @@ class Common(Configuration):
 
     # Set DEBUG to False as a default for safety
     # https://docs.djangoproject.com/en/dev/ref/settings/#debug
-    DEBUG = strtobool(os.getenv('DJANGO_DEBUG', 'no'))
+    # DEBUG = strtobool(os.getenv('DJANGO_DEBUG', 'no'))
+    DEBUG = True
 
     # Password Validation
     # https://docs.djangoproject.com/en/2.0/topics/auth/passwords/#module-django.contrib.auth.password_validation
@@ -199,3 +202,7 @@ class Common(Configuration):
             'rest_framework.authentication.TokenAuthentication',
         )
     }
+
+    CORS_ALLOWED_ORIGINS = [
+        "http://localhost:3000",
+    ]

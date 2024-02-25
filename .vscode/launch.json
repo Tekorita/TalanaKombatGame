@@ -1,0 +1,88 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Django",
+        "type": "python",
+        "request": "attach",
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/app/"
+          }
+        ],
+        "port": 8000,
+        "host": "127.0.0.1"
+      },
+      {
+        "name": "Pytest Debug",
+        "type": "python",
+        "request": "attach",
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/app/"
+          }
+        ],
+        "port": 8002,
+        "host": "127.0.0.1"
+      },
+      {
+        "name": "Local Django",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/manage.py",
+        "args": [
+          "runserver"
+        ],
+        "django": true,
+        "justMyCode": true,
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Local MakeMigrations",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/manage.py",
+        "args": [
+          "makemigrations"
+        ],
+        "django": true,
+        "justMyCode": true,
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Local Pytest",
+        "type": "python",
+        "request": "launch",
+        "module": "pytest",
+        "console": "integratedTerminal",
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "Local Migrate",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/manage.py",
+        "args": [
+          "migrate"
+        ],
+        "django": true,
+        "justMyCode": true,
+        "envFile": "${workspaceFolder}/.env"
+      },
+      {
+        "name": "shell",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/manage.py",
+        "args": [
+          "shell_plus"
+        ],
+        "django": true,
+        "justMyCode": true,
+        "envFile": "${workspaceFolder}/.env"
+      }
+    ]
+  }
+  

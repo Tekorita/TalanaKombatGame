@@ -6,6 +6,7 @@ services:
     restart: always
     environment:
       - DJANGO_SECRET_KEY=local
+      - DEBUG=1
     build: ./
     command: >
       bash -c "python wait_for_postgres.py &&
@@ -15,6 +16,8 @@ services:
       - ./:/code
     ports:
       - "8000:8000"
+    stdin_open: true
+    tty: true
     depends_on:
       - postgres
   documentation:

@@ -2,6 +2,7 @@ FROM python:3.8.3-slim-buster
 ENV PYTHONUNBUFFERED 1
 
 # Allows docker to cache installed dependencies between builds
+RUN pip install --upgrade pip==24.0
 COPY ./requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
